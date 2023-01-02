@@ -1,4 +1,6 @@
 """
+John Burris:
+
 Today’s date is the beginning of the Fibonacci sequence. 1/1/23
 
 I think everyone on the server should use this as incentive to practice coding before you return to school.
@@ -13,6 +15,7 @@ Sequence: 1, 1, 2, 3, 5, 8, 13, 21,…
 """
 
 #GLOABL VARIABLE FOR STARTING FIBONACCI SEQEUNCE
+F0 = 0
 F1 = 1
 
 #How many iterations to run
@@ -22,8 +25,12 @@ iteration_amount = int(input("How many iterations of the Fibonacci Sequence woul
 #Do Iteratively
 fib_sequence = []
 for i in range(iteration_amount):
-    if i < 2:
+    if i == 0:
+        fib_sequence.append(F0)
+    elif i < 2:
         fib_sequence.append(F1)
+    else:
+        fib_sequence.append(fib_sequence[i-1] + fib_sequence[i-2])
 
 print(fib_sequence)
 
