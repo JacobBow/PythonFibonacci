@@ -1,0 +1,22 @@
+"""
+Today’s date is the beginning of the Fibonacci sequence. 1/1/23
+
+I think everyone on the server should use this as incentive to practice coding before you return to school.
+
+Write both a recursive function solution and an iterative (simple for loop) solution that produces the first 100 Fibonacci numbers
+
+Reminder:
+Fib(1) = 1
+Fib(2) = 1
+Fib(n) = Fib(n-2) + Fib(n-1)
+Sequence: 1, 1, 2, 3, 5, 8, 13, 21,…
+"""
+
+#How many iterations to run
+iteration_amount = input("How many iterations of the Fibonacci Sequence would you like to do?")
+
+
+#Do Iteratively
+
+
+#Do Recursively
