@@ -12,11 +12,19 @@ Fib(n) = Fib(n-2) + Fib(n-1)
 Sequence: 1, 1, 2, 3, 5, 8, 13, 21,…
 """
 
+#GLOABL VARIABLE FOR STARTING FIBONACCI SEQEUNCE
+F1 = 1
+
 #How many iterations to run
-iteration_amount = input("How many iterations of the Fibonacci Sequence would you like to do?")
+iteration_amount = int(input("How many iterations of the Fibonacci Sequence would you like to do? "))
 
 
 #Do Iteratively
+fib_sequence = []
+for i in range(iteration_amount):
+    if i < 2:
+        fib_sequence.append(F1)
 
+print(fib_sequence)
 
 #Do Recursively
