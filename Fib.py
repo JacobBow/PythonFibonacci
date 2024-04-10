@@ -49,4 +49,4 @@ for i in range(iteration_amount):
     else:
         fib_sequence.append(fib_sequence[i-1] + fib_sequence[i-2])
 
-print(fib_sequence, F0)
+print(fib_sequence)
